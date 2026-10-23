@@ -1,0 +1,830 @@
+/* ******************************** START GLOBAL ******************************** */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Exo", sans-serif;
+    color: #000;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+section,
+footer{
+    padding: 30px 0;
+}
+
+/* ******************************** END GLOBAL ******************************** */
+
+
+/* ******************************** START UTILITIES ******************************** */
+
+.fw-600,
+.categorey p,
+footer li{
+    font-weight: 600;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-gray,
+.header-sec p,
+.title-card .sub{
+    color: #525252;
+}
+
+.red-clr{
+    color: #E7000B !important;
+}
+
+.blue-clr{
+    color: #155DFC;
+}
+
+.purpule-clr{
+    color: #AD46FF;
+}
+
+.bg-black,
+.custom-badge,
+#hero-sec .btn-start{
+    background-color: #000;
+}
+
+.bg-red{
+    background-color: #E7000B;
+}
+
+.bg-blue{
+    background-color: #2B7FFF;
+}
+
+.bg-purpule{
+    background-color: #AD46FF;
+}
+
+.bg-green{
+    background-color: #00C950;
+}
+
+.fs-14,
+.personal-info i{
+    font-size: 14px !important;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.sm-gap{
+    gap: 15px !important;
+}
+
+.w-50,
+.content-sec,
+.wrapp-img{
+    width: 50%;
+}
+
+/* ******************************** END UTILITIES ******************************** */
+
+
+/* ******************************** START BORDERS & SHADOWS ******************************** */
+
+.custom-border,
+nav,
+.btn-header button,
+#authors .icon-form{
+    border: 1px solid #000;
+}
+
+.custom-border-2,
+.custom-form,
+.header-img,
+.badge{
+    border: 2px solid #000;
+}
+
+.custom-border-3{
+    border: 4px solid #000;
+}
+
+.sm-shadow{
+    box-shadow: 3px 3px 0 #000;
+}
+
+.lg-shadow,
+.hover-lg-shadow:hover{
+    box-shadow: 6px 6px 0 #000;
+}
+
+/* ******************************** END BORDERS & SHADOWS ******************************** */
+
+
+/* ******************************** START FLEX ******************************** */
+
+.flex-group,
+.jus-between,
+.icon-form,
+.btn-sec,
+.custom-list li,
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.flex-group{
+    gap: 40px;
+}
+
+.flex-column,
+#authors .card{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-column{
+    gap: 20px;
+}
+
+.jus-between{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.icon-form{
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    color: #fff;
+}
+
+#community .main-sec,
+footer .flex-group,
+#latest-article .flex-group{
+    align-items: flex-start;
+}
+
+#community .custom-card .flex-group{
+    align-items: center;
+}
+
+/* ******************************** END FLEX ******************************** */
+
+
+/* ******************************** START COMMON COMPONENTS ******************************** */
+
+.custom-form{
+    padding: 16px;
+    background-color: #fff;
+}
+
+.custom-form-lg{
+    padding: 32px;
+}
+
+.badge{
+    width: fit-content;
+    color: #fff;
+    font-weight: 700;
+}
+
+.custom-badge{
+    padding: 10px 16px;
+    margin-bottom: 24px;
+}
+
+.sm-badge{
+    position: absolute;
+    top: 5%;
+    right: 19px;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 800 !important;
+}
+
+.header-sec{
+    margin: 30px 0;
+}
+
+.header-sec h3{
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.header-sec p,
+.title-card .sub{
+    font-weight: 600 !important;
+}
+
+.divider{
+    width: 130px;
+    height: 7px;
+    margin: 20px auto 60px;
+    transform: rotate(1deg);
+}
+
+.btn{
+    padding: 16px 32px;
+    border: 3px solid #000;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn-sec{
+    gap: 20px;
+}
+
+.btn-round{
+    border-radius: 25px;
+}
+
+/* ******************************** END COMMON COMPONENTS ******************************** */
+
+
+/* ******************************** START EFFECTS ******************************** */
+
+.hover-push,
+.translate-y,
+.hover-lg-shadow,
+footer button,
+footer li,
+nav ul li,
+.btn-header button,
+#authors .icon-form,
+#authors .title-card h4,
+#latest-article .title-card h4,
+.custom-card-artical{
+    transition: 0.3s ease-in-out;
+}
+
+.hover-push:hover{
+    transform: translate(6px, 6px);
+    box-shadow: none;
+}
+
+.translate-y:hover{
+    transform: translate(-3px, -3px);
+}
+
+.wrapp-img .translate-y:hover{
+    transform: translateX(-4px);
+}
+
+.btn-header button:hover,
+footer button:hover{
+    transform: translate(5px, 3px);
+}
+
+.rotate-3{
+    transform: rotate(1deg);
+}
+
+.rotate-16{
+    transform: rotate(16deg);
+}
+
+.rotate-14{
+    transform: rotate(-14deg);
+}
+
+.rotate-40{
+    transform: rotate(40deg);
+}
+
+/* ******************************** END EFFECTS ******************************** */
+
+
+/* ******************************** START NAV ******************************** */
+
+nav{
+    height: 66px;
+    padding: 12px 24px;
+    background-color: #fff;
+    border-radius: 16px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80% !important;
+    z-index: 9999999999999 !important;
+}
+
+nav h1{
+    font-size: 30px;
+}
+
+nav span,
+nav ul li:hover{
+    color: #FF6900;
+}
+
+nav ul li{
+    gap: 10px;
+}
+
+li i{
+    color: #D1D5DC;
+    font-size: 10px;
+}
+
+.btn-header button{
+    padding: 10px 16px;
+    background-color: #FFD15B;
+    color: #000;
+    font-weight: 600;
+}
+
+/* ******************************** END NAV ******************************** */
+
+
+/* ******************************** START HERO ******************************** */
+
+#hero-sec{
+    background-color: #FFF085;
+}
+
+#hero-sec .flex-group{
+    padding: 100px 0;
+}
+
+#hero-sec h2{
+    font-size: 72px;
+    line-height: 90px;
+    font-weight: 900;
+    text-shadow: 3px 3px 0 #000;
+}
+
+#hero-sec .custom-form{
+    margin: 32px 0;
+}
+
+#hero-sec .btn-watch{
+    background-color: #fff;
+    color: #000;
+}
+
+.wrapp-img,
+#latest-article .custom-card-artical,
+#authors .card{
+    position: relative;
+}
+
+#authors .card{
+    height: 484px;
+}
+
+.header-img{
+    height: 404px;
+}
+
+.wrapp-img .custom-badge{
+    position: absolute;
+    right: -25px;
+    z-index: 5;
+    transform: rotate(15deg);
+}
+
+/* ******************************** END HERO ******************************** */
+
+
+/* ******************************** START AUTHORS ******************************** */
+
+#authors{
+    background-color: #FFD230;
+    border-block: 3px solid #000;
+}
+
+#authors .card{
+    align-items: center;
+    text-align: center;
+}
+
+#authors .card-1,
+#latest-article .categorey-1{
+    background-color: #FEF9C2;
+}
+
+#authors .card-2,
+#latest-article .categorey-2{
+    background-color: #DBFCE7;
+}
+
+#authors .card-3,
+#latest-article .categorey-3{
+    background-color: #FCE7F3;
+}
+
+.card-img{
+    width: 117px;
+    height: 117px;
+}
+
+.social-icons{
+    margin-top: 25px;
+}
+
+.dec-card{
+    line-height: 26px;
+}
+
+.title-card{
+    margin: 20px 0;
+}
+
+#authors .icon-form:first-of-type:hover{
+    background-color: #1DA1F2;
+}
+
+#authors .icon-form:nth-of-type(2):hover{
+    background-color: #155DFC;
+}
+
+#authors .icon-form:last-of-type:hover{
+    background-color: #E60076;
+}
+
+/* ******************************** END AUTHORS ******************************** */
+
+
+/* ******************************** START AUTHORS & ARTICLES TITLE HOVER ******************************** */
+
+#authors .card-1 .title-card h4:hover,
+#latest-article .custom-card-artical:nth-of-type(1) .title-card h4:hover{
+    color: #E7000B;
+}
+
+#authors .card-2 .title-card h4:hover,
+#latest-article .custom-card-artical:nth-of-type(2) .title-card h4:hover{
+    color: #155DFC;
+}
+
+#authors .card-3 .title-card h4:hover,
+#latest-article .custom-card-artical:nth-of-type(3) .title-card h4:hover{
+    color: #AD46FF;
+}
+
+/* ******************************** END AUTHORS & ARTICLES TITLE HOVER ******************************** */
+
+
+/* ******************************** START COMMUNITY ******************************** */
+
+#community{
+    background-color: #F5F5F5;
+}
+
+#community button{
+    padding: 24px 48px;
+    font-size: 24px;
+}
+
+#community .custom-card h6{
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+#community .img-custom-card{
+    width: 48px;
+    height: 48px;
+}
+
+#community .dec-custom-card{
+    font-size: 18px;
+    line-height: 29px;
+    font-weight: 600;
+}
+
+#community .custom-card.card-1{
+    background-color: #FEF2F2;
+}
+
+#community .custom-card.card-2{
+    background-color: #EFF6FF;
+}
+
+#community .custom-card.card-3{
+    background-color: #FAF5FF;
+}
+
+#community .info-card{
+    margin-top: 18px;
+}
+
+#community .title,
+footer h3,
+footer h4,
+#latest-article .title{
+    margin-bottom: 32px;
+}
+
+.custom-list{
+    margin: 30px 0;
+}
+
+#community .custom-list li{
+    gap: 18px;
+    line-height: 65px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+/* ******************************** END COMMUNITY ******************************** */
+
+
+/* ******************************** START LATEST ARTICLES ******************************** */
+
+#latest-article .left-sec{
+    width: 70%;
+}
+
+#latest-article .right-sec{
+    width: 30%;
+}
+
+#latest-article .img-wrapp .img-custom-card{
+    width: 160px !important;
+    height: 128px !important;
+}
+
+#latest-article .categorey-1:hover,
+#latest-article .custom-card-artical:nth-of-type(1) .content-custom-card .badge{
+    background-color: #FFDF20;
+}
+
+#latest-article .categorey-2:hover,
+#latest-article .custom-card-artical:nth-of-type(2) .content-custom-card .badge{
+    background-color: #7BF1A8;
+}
+
+#latest-article .categorey-3:hover,
+#latest-article .custom-card-artical:nth-of-type(3) .content-custom-card .badge{
+    background-color: #FDA5D5;
+}
+
+#latest-article .categorey-4{
+    background-color: #DBEAFE;
+}
+
+#latest-article .categorey-4:hover{
+    background-color: #88BDF4;
+}
+
+#latest-article .categorey-5{
+    background-color: #F3E8FF;
+}
+
+#latest-article .categorey-5:hover{
+    background-color: #DAB2FF;
+}
+
+#latest-article .custom-card-artical .sm-badge{
+    position: absolute;
+    left: 155px;
+    top: 29px;
+}
+
+#latest-article .btn-sec{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#latest-article .content-custom-card p{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+#latest-article .custom-card-artical:nth-of-type(1) .content-custom-card .badge,
+#latest-article .custom-card-artical:nth-of-type(3) .content-custom-card .badge{
+    transform: rotate(-4deg);
+}
+
+#latest-article .content-custom-card .sm-badge{
+    position: unset;
+    color: #000;
+}
+
+.personal-info i{
+    color: #000;
+}
+
+.custom-card-artical:hover{
+    transform: translate(-5px, -5px);
+}
+
+/* ******************************** END LATEST ARTICLES ******************************** */
+
+
+/* ******************************** START ARTICLE FIXED SHADOW ******************************** */
+
+.article-card-wrap{
+    position: relative;
+}
+
+.article-card-wrap::after{
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 0;
+}
+
+.article-card-wrap .custom-card-artical{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+
+/* ******************************** END ARTICLE FIXED SHADOW ******************************** */
+
+
+/* ******************************** START FIRE ICON ******************************** */
+
+.fire-icon{
+    color: #FF6900 !important;
+    margin-right: 8px;
+}
+
+/* ******************************** END FIRE ICON ******************************** */
+
+
+/* ******************************** START SECTION DECORATION ******************************** */
+
+#hero-sec,
+#authors{
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-sec .container,
+#authors .container{
+    position: relative;
+    z-index: auto !important;
+    
+}
+
+#hero-sec::before,
+#hero-sec::after,
+#authors::before,
+#authors::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    transform: rotate(15deg);
+}
+
+#hero-sec::before{
+    width: 150px;
+    height: 150px;
+    top: 70px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+#hero-sec::after{
+    width: 120px;
+    height: 120px;
+    top: 190px;
+    right: 70px;
+    background-color: rgba(255, 105, 0, 0.12);
+}
+
+#authors::before{
+    width: 130px;
+    height: 130px;
+    left: 25px;
+    bottom: -30px;
+    background-color: rgba(255, 105, 0, 0.12);
+}
+
+#authors::after{
+    width: 145px;
+    height: 145px;
+    top: -45px;
+    right: 25px;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* ******************************** END SECTION DECORATION ******************************** */
+
+
+/* ******************************** START FOOTER ******************************** */
+
+footer{
+    color: #fff !important;
+    padding: 50px 0;
+}
+
+footer .icon-form{
+    background-color: #fff;
+}
+
+footer i{
+    color: #000;
+}
+
+footer p{
+    font-size: 18px;
+    line-height: 29px;
+    margin-bottom: 15px;
+}
+
+footer h4,
+.content-custom-card h4{
+    font-size: 24px;
+}
+
+footer input,
+footer button,
+.divider-footer{
+    width: 100%;
+}
+
+footer input{
+    padding: 16px 32px;
+    background-color: transparent;
+    outline: none;
+}
+
+footer button{
+    margin-top: 15px;
+    background-color: #FFDF20;
+    color: #000 !important;
+    border: 3px solid #FFDF20 !important;
+}
+
+footer button:hover{
+    background-color: #FDC700;
+}
+
+footer li:hover{
+    color: #FFDF20;
+}
+
+footer .sec-2 li{
+    line-height: 40px;
+}
+
+.divider-footer{
+    height: 4px;
+    margin: 30px 0;
+    background-color: #fff;
+}
+
+.last-sec-footer p{
+    margin: 0 !important;
+}
+
+/* ******************************** END FOOTER ******************************** */
+
+#hero-sec::after{
+    z-index: 0;
+}
+
+#hero-sec .container{
+    position: relative;
+    z-index: auto;
+}
+
+.wrapp-img{
+    position: relative;
+    z-index: 2;
+}
+
+.header-img{
+    position: relative;
+    z-index: 2;
+}
